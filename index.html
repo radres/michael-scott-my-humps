@@ -28,15 +28,15 @@ a { color: var(--accent); }
 <main>
 <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/w6szQQEFzC8" title="Michael Scott My Humps ringtone" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 <h1>My Humps: the Michael Scott ringtone, extended</h1>
-<p>The ringtone from The Office is 23 seconds long. This is 3 minutes of it, rebuilt from the transcribed melody and synthesized from scratch.</p>
+<p>The ringtone from The Office is 23 seconds long. This is 3 minutes of it, made from the original recording cut at the bar lines. Every sound is the real ringtone.</p>
 <div class="player">
 <audio id="a" controls preload="metadata" src="my-humps-extended.mp3"></audio>
 <ol id="s"></ol>
 </div>
-<p class="links"><a href="my-humps-extended.mp3" download>mp3</a> · <a href="my-humps-extended.mid" download>MIDI</a> · <a href="https://github.com/radres/michael-scott-my-humps">source</a></p>
+<p class="links"><a href="my-humps-extended.mp3" download>mp3</a> · <a href="https://github.com/radres/michael-scott-my-humps">source</a> · <a href="my-humps-synth-remix.mp3">synth remix</a></p>
 </main>
 <script>
-const parts = [[0, "intro"], [15.5, "hook"], [23.2, "chorus"], [38.7, "verse"], [54.2, "hook + chorus, octave bells"], [77.4, "solo"], [92.9, "chorus with harmony"], [108.4, "breakdown"], [123.9, "key change"], [162.6, "outro"]];
+const parts = [[0, "the ringtone, as recorded"], [23.2, "long hook"], [38.7, "chorus"], [54.2, "hook"], [61.9, "chorus"], [77.4, "long hook"], [92.9, "chorus"], [108.4, "hook"], [116.1, "chorus"], [131.6, "long hook"], [147.1, "chorus"], [162.5, "hook"], [170.3, "chorus, fade out"]];
 const a = document.getElementById("a"), s = document.getElementById("s");
 const fmt = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
 const btns = parts.map(([t, name]) => {

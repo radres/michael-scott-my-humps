@@ -14,7 +14,7 @@ BPM = 124
 SPB = 60 / BPM
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "out"
-NAME = "my-humps-extended"
+NAME = "my-humps-synth-remix"
 rng = np.random.default_rng(124)
 
 LETTERS = {"C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11}
